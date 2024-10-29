@@ -1,0 +1,19 @@
+.SeeMore{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+.ActionButtons{
+    position: relative;
+}
+.SeeMoreSVG{
+    width: 28px;
+    height: 28px;
+}
+.SeeMoreModal{
+    position: absolute;
+    z-index: 99;
+    top: 36px;
+    right: -3px;
+}

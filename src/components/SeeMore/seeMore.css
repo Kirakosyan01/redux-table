@@ -1,0 +1,19 @@
+.SeeMoreComponent{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background-color: #e4e4e4;
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: #a8a8a8;
+        }
+    }
+}

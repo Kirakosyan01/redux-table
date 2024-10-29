@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    h1{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    button{
+        border: none;
+        background-color: #191919;
+        font-weight: 600;
+        color: #fff;
+        font-size: 17px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #3a3a3a;
+        }
+    }
+}
+.addButtonDiv{
+    display: flex;
+    max-width: 540px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}

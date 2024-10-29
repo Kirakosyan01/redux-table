@@ -1,0 +1,63 @@
+.DeleteConformContainer{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DeleteModal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 7px;
+    width: 320px;
+    height: 210px;
+    background-color: #fff;
+}
+.DeleteModalBtn{
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    .DeleteModalCancel{
+        border: none;
+        background-color: #191919;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #363636;
+        }
+    }
+    .DeleteModalDelete{
+        border: none;
+        background-color: #d82f2f;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #da4d4d;
+        }
+    }
+}
+.ModalFirstText{
+font-size: 24px;
+}
+.ModalSecondText{
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+}
