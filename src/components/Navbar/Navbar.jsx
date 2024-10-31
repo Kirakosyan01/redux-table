@@ -56,7 +56,7 @@ export default function Navbar() {
     <nav className='navbar'>
       <div className='addButtonDiv'>
       <h1>List of Users</h1>
-      {isFormOpen ? <button className='NavCloseBtn' onClick={handleFormClose}>Close</button> : <button className='AddNewBtn' onClick={handleFormOpen}><IoMdAdd className='NavBtnIcon'/>Add new user</button>}
+      {isFormOpen ? <button className='NavCloseBtn' onClick={handleFormClose}>Close</button> : <button className='AddNewBtn' onClick={handleFormOpen}><IoMdAdd className='NavBtnIcon'/>Add</button>}
       {isFilterOpen ? <button className='NavCloseBtn' onClick={handleFilterClose}>Close</button> : <button className='NavFilterBtn' onClick={handleFilterOpen}><CiFilter className='NavBtnIcon'/>Filter</button>}
       {isSearchOpen ? <button className='NavCloseBtn' onClick={handleSearchClose}>Close</button> : <button className='NavSearchBtn' onClick={handleSearchOpen}><CiSearch  className='NavBtnIcon'/>Search</button>}
       </div>
