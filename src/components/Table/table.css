@@ -10,12 +10,34 @@
         color: #fff;
     }
     td{
+        border-radius: 3px;
         border: 1px solid #191919;
         font-size: 19px;
         font-weight: 500;
+    }
+    tr{
+        animation: enterAnimation 0.5s;
     }
 }
 .ActionMore{
     width: 1%;
     padding: 2px;
+}
+.animationDiv{
+    width: 420px;
+}
+.AnimationParentDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@keyframes enterAnimation {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

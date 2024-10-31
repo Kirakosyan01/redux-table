@@ -1,0 +1,7 @@
+.FilterComponent{
+    padding: 2px;
+    display: flex;
+    row-gap: 2px;
+    column-gap: 2px;
+    margin-top: 15px;
+}

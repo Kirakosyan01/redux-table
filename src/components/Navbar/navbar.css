@@ -6,10 +6,20 @@
     top: 0;
     align-items: center;
     h1{
+        margin-right: 50px;
         font-size: 32px;
         font-weight: 500;
     }
+    .NavSearchBtn{
+        background-color: #10742e;
+        &:hover{
+            background-color: #478a5c;
+        }
+    }
     button{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
         border: none;
         background-color: #191919;
         font-weight: 600;
@@ -23,11 +33,29 @@
             background-color: #3a3a3a;
         }
     }
+    .NavFilterBtn{
+        background-color: #363792;
+        &:hover{
+            background-color: #4a4b9b;
+        }
+    }
+    .NavCloseBtn{
+        background-color: #bb3838;
+        &:hover{
+            background-color: #b85454;
+        }
+    }
 }
 .addButtonDiv{
     display: flex;
-    max-width: 540px;
+    max-width: 640px;
     width: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+}
+
+.NavBtnIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
 }

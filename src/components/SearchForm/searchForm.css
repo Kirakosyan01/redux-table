@@ -1,0 +1,29 @@
+.SearchForm{
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    input{
+        padding: 10px 35px 10px 10px;
+        font-size: 17px;
+        border: 1px solid #727272;
+        border-radius: 5px;
+        width: 380px;
+        height: 30px;
+    }
+    button{
+        padding: 0;
+        top: 3px;
+        right: 7px;
+        position: absolute;
+        background-color: transparent;
+        &:hover{
+            background-color: transparent;
+            transform: scale(1.2);
+        }
+    }
+    .SearchFormIcon{
+        color: black;
+        width: 24px;
+        height: 24px;
+    }
+}

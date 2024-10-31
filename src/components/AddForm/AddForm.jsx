@@ -17,6 +17,7 @@ export default function AddForm() {
       company: company.value,
       status: status.value,
       isSeeMore: false,
+      isEdit: false,
     }
     dispatch({type: "ADD_USER", payload: newUser})
     

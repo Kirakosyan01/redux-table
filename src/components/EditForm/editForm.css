@@ -1,0 +1,74 @@
+.EditFormContainer{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EditFormModal{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: #fff;
+    width: 320px;
+    height: 540px;
+}
+.EditForm{
+    display: flex;
+    flex-direction: column;
+    input{
+        border: 1px solid #a3a3a3;
+        padding: 8px 10px;
+        border-radius: 4px;
+        font-size: 17px;
+    }
+    label{
+        align-self: flex-start;
+        margin-bottom: 5px;
+    }
+}
+.EditUser{
+    margin-bottom: 15px;
+}
+.EditFormButtons{
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.EditFormCancel{
+    border: none;
+    background-color: #191919;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: #363636;
+    }
+}
+.EditFormSave{
+    border: none;
+    background-color: #21C65E;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: #6ac48b;
+    }
+}
