@@ -3,7 +3,7 @@ import "./table.css";
 import Navbar from "../Navbar/Navbar";
 import { useSelector } from "react-redux";
 import ActionButtons from "../ActionButtons/ActionButtons";
-import AnimationData from '../../assets/Animation - 1728464284574.json';
+import AnimationData from "../../assets/Animation - 1728464284574.json";
 import Lottie from "lottie-react";
 
 export default function Table() {
@@ -20,9 +20,10 @@ export default function Table() {
       );
       setFilteredUsers(filteredUsers);
     } else {
-      setFilteredUsers(usersData)
+      setFilteredUsers(usersData);
     }
   }, [searchTerm, usersData]);
+
 
   return (
     <div>
@@ -41,20 +42,35 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          {filteredUsers.length > 0 ? filteredUsers.map((user, idx) => {
-            return (
-              <tr key={user.id}>
-                <td>{idx + 1}</td>
-                <td>{user.firstName}</td>
-                <td>{user.lastName}</td>
-                <td>{user.age}</td>
-                <td>{user.email}</td>
-                <td>{user.company}</td>
-                <td>{user.status}</td>
-                <td className="ActionMore">{<ActionButtons user={user} />}</td>
-              </tr>
-            );
-          }) : <tr><td colSpan={8}><div className="AnimationParentDiv"><Lottie animationData={AnimationData} className="animationDiv"/></div></td></tr>}
+          {filteredUsers.length > 0 ? (
+            filteredUsers.map((user, idx) => {
+              return (
+                <tr key={user.id}>
+                  <td>{idx + 1}</td>
+                  <td>{user.firstName}</td>
+                  <td>{user.lastName}</td>
+                  <td>{user.age}</td>
+                  <td>{user.email}</td>
+                  <td>{user.company}</td>
+                  <td>{user.status}</td>
+                  <td className="ActionMore">
+                    {<ActionButtons user={user} />}
+                  </td>
+                </tr>
+              );
+            })
+          ) : (
+            <tr>
+              <td colSpan={8}>
+                <div className="AnimationParentDiv">
+                  <Lottie
+                    animationData={AnimationData}
+                    className="animationDiv"
+                  />
+                </div>
+              </td>
+            </tr>
+          )}
         </tbody>
       </table>
     </div>
